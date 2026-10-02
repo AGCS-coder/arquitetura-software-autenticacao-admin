@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ config["TITLE"] }}{% endblock %}
+
+{% block content %}
+    <div class="card-body">                             
+        <h6 class="card-title fw-bold">{{ product.id }}</h6>
+        <p class="card-text text-muted small">{{ product.description }}</p>
+        <span class="fw-bold text-primary">{{ product.price }}</span>
+    </div>
+{% endblock %}

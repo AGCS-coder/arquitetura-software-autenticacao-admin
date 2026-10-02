@@ -1,0 +1,15 @@
+[default]
+FLASK_DEBUG = false
+TITLE = "Loja Architech"
+SECRET_KEY = "@format {env[SECRET_KEY]}"
+
+[development]
+FLASK_DEBUG = true
+SQLALCHEMY_DATABASE_URI = "sqlite:///modelo1.db"
+TEMPLATES_AUTO_RELOAD = true
+
+[testing]
+SQLALCHEMY_DATABASE_URI = "postgresql://scott:tiger@localhost/mytestingdatabase"
+
+[production]
+SQLALCHEMY_DATABASE_URI = "postgresql://scott:tiger@localhost/mydatabase"
